@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const { execSync } = require("child_process");
 const { Select } = require("enquirer");
-require("@scarf/scarf")()
 
 const RunCommand = (command) => {
   try {
