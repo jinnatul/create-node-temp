@@ -9,9 +9,9 @@
 </div>
 
 
-# Node Starter
+# Node App
 
-**Node-starter** is a command-line application, here you can easily create your node.js project structure.
+**nano-app** is a command-line application, here you can easily create your node.js project structure.
 
 
 ## Installation
@@ -289,7 +289,7 @@ For support, email morolswediu@gmail.com
 
 ## License
 
-[MIT](https://github.com/jinnatul/node-starter/blob/master/LICENSE)
+[MIT](https://github.com/jinnatul/node-app/blob/master/LICENSE)
 
 
 
