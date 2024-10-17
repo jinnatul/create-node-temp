@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-
 const { execSync } = require("child_process");
 const { Select } = require("enquirer");
+const scarf = require("@scarf/scarf");
+scarf.init("nano-app");
 
 const RunCommand = (command) => {
   try {
@@ -53,6 +54,12 @@ const RunCommand = (command) => {
   console.log(`\n${"\033[31m"} Installing dependencies for ${repoName}\n`);
   const InstalledDeps = RunCommand(installDepsCommand);
   if (!InstalledDeps) process.exit(-1);
+
+  scarf.track("Setup completed", {
+    language: ans1,
+    ecmascript: ans2,
+    packageManager: ans3,
+  });
 
   console.log(`\n${"\033[32m"} Congratulations! You are ready.`);
   console.log(`\n${"\033[33m"} This node.js template maintained by Morol`);
