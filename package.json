@@ -1,6 +1,6 @@
 {
   "name": "nano-app",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Set up a modern node.js api service by running one command",
   "bin": "./bin/cli.js",
   "keywords": [
@@ -28,5 +28,8 @@
     "@scarf/scarf": "^1.3.0",
     "enquirer": "^2.3.6",
     "git-commit-msg-linter": "^3.3.3"
+  },
+  "scarfSettings": {
+    "allowTopLevel": true
   }
 }
