@@ -14,7 +14,6 @@
 
 **nano-app** is a command-line application, here you can easily create your node.js project structure.
 
-
 ## Installation
 
 Install my-project with npm
@@ -72,6 +71,7 @@ my-project
     ├── app.js
     └── server.js
 ```
+
 ## Features
 
 - ES6+ configuration (Babel)
@@ -85,9 +85,6 @@ my-project
 - Modern data validation using Joi
 - Forgot password mail template
 - OTP validation mail template
-
-
-
 
 ## Environment Variables
 
@@ -116,8 +113,6 @@ If you want to use email verification
 - `EMAIL`
 - `EMAIL_PASS` (App password)
 
-
-
 ## API Reference
 
 ### Google Log In
@@ -125,6 +120,7 @@ If you want to use email verification
 ```
   Redirect /api/v1/auth/google
 ```
+
 For google login you need to set your `FrontEnd URL` at .env.development or .env.production [`FRONT_END`]
 
 ### Sign Up
@@ -133,14 +129,13 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/signup
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `f_name` | `string` | **Required**. Your first name |
-| `l_name` | `string` | **Required**. Your last name |
-| `email` | `string` | **Required**. Your email |
-| `phone` | `string` | **Required**. Your phone number |
-| `password` | `string` | **Required**. Your password |
-
+| Body       | Type     | Description                     |
+| :--------- | :------- | :------------------------------ |
+| `f_name`   | `string` | **Required**. Your first name   |
+| `l_name`   | `string` | **Required**. Your last name    |
+| `email`    | `string` | **Required**. Your email        |
+| `phone`    | `string` | **Required**. Your phone number |
+| `password` | `string` | **Required**. Your password     |
 
 ### Sign In
 
@@ -148,11 +143,10 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/signin
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `email` | `string` | **Required**. Your email |
+| Body       | Type     | Description                 |
+| :--------- | :------- | :-------------------------- |
+| `email`    | `string` | **Required**. Your email    |
 | `password` | `string` | **Required**. Your password |
-
 
 ### Resent OTP
 
@@ -160,10 +154,9 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/resent-otp
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Body    | Type     | Description              |
+| :------ | :------- | :----------------------- |
 | `email` | `string` | **Required**. Your email |
-
 
 ### Verify OTP
 
@@ -171,11 +164,10 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/verify-otp
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Body    | Type     | Description              |
+| :------ | :------- | :----------------------- |
 | `email` | `string` | **Required**. Your email |
-| `otp` | `string` | **Required**. Your otp |
-
+| `otp`   | `string` | **Required**. Your otp   |
 
 ### Verify MFA
 
@@ -183,11 +175,10 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/verify-mfa
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `id` | `int` | **Required**. Your user id |
+| Body    | Type     | Description                  |
+| :------ | :------- | :--------------------------- |
+| `id`    | `int`    | **Required**. Your user id   |
 | `token` | `string` | **Required**. Your mfa token |
-
 
 ### Forgot Password
 
@@ -195,10 +186,9 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/forgot-password
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Body    | Type     | Description              |
+| :------ | :------- | :----------------------- |
 | `email` | `string` | **Required**. Your email |
-
 
 ### Reset Password
 
@@ -206,11 +196,10 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   POST /api/v1/auth/reset-password
 ```
 
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `reset_link` | `string` | **Required**. Reset link |
-| `password` | `string` | **Required**. Your password |
-
+| Body         | Type     | Description                 |
+| :----------- | :------- | :-------------------------- |
+| `reset_link` | `string` | **Required**. Reset link    |
+| `password`   | `string` | **Required**. Your password |
 
 ### Get Profile
 
@@ -218,10 +207,9 @@ For google login you need to set your `FrontEnd URL` at .env.development or .env
   GET /api/v1/auth/profile
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Parameter       | Type     | Description                  |
+| :-------------- | :------- | :--------------------------- |
 | `Authorization` | `string` | **Required**. Your JWT token |
-
 
 ## Run Locally
 
@@ -237,7 +225,6 @@ Start the server
   npm run dev
 ```
 
-
 ## Deployment
 
 To deploy this project run
@@ -245,7 +232,6 @@ To deploy this project run
 ```bash
   npm run start
 ```
-
 
 ## Usage/Examples
 
@@ -257,42 +243,33 @@ npx nano-app api
 
 ![Part 2](https://user-images.githubusercontent.com/31995155/229435818-5a6aa443-ad4c-4179-9b30-59ac7e89ac13.png)
 
-
 ![Part 3](https://user-images.githubusercontent.com/31995155/229435893-6517d7de-0e27-44bc-880f-b2f0e9be397a.png)
+
 ## Demo
 
 Insert gif or link to demo
 
 [![Demo Video]](https://user-images.githubusercontent.com/31995155/185107105-5df974f9-ccf0-467d-a365-5225e8d017eb.mp4)
 
-
 ## Tech Stack
 
 **Server:** Node, Express
-
 
 ## Authors
 
 - [@jinnatul](https://www.github.com/jinnatul)
 
-
 ## Feedback
 
 If you have any feedback, please reach out to us at morolswediu@gmail.com
-
-
-
 
 ## Support
 
 For support, email morolswediu@gmail.com
 
-
 ## License
 
 [MIT](https://github.com/jinnatul/node-app/blob/master/LICENSE)
-
-
 
 If you like, Give a star ⭐
 

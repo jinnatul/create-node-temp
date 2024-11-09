@@ -1,6 +1,6 @@
 {
   "name": "nano-app",
-  "version": "2.0.13",
+  "version": "3.0.0",
   "description": "Set up a modern node.js api service by running one command",
   "bin": "./bin/cli.js",
   "keywords": [
