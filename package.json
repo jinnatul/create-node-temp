@@ -1,6 +1,6 @@
 {
   "name": "nano-app",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Set up a modern node.js api service by running one command",
   "bin": "./bin/cli.js",
   "keywords": [
@@ -25,11 +25,9 @@
   "author": "Morol",
   "license": "ISC",
   "dependencies": {
-    "@scarf/scarf": "^1.3.0",
+    "@analytics/google-analytics": "^1.0.7",
+    "analytics": "^0.8.14",
     "enquirer": "^2.3.6",
     "git-commit-msg-linter": "^3.3.3"
-  },
-  "scarfSettings": {
-    "allowTopLevel": true
   }
 }
